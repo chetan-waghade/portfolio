@@ -5,6 +5,11 @@
     margin: 0;
 }
 
+/* Scroll Behaviour */
+html {
+    scroll-behavior: smooth;
+}
+
 /* Color Variables */
 :root {
     --primary-color: #21A179;
@@ -43,13 +48,14 @@ li {
 body {
     background-color: var(--background-color);
     font-family: Inconsolata, monospace;
+    scroll-behavior: smooth;
 }
 
 /* Container */
-.cw-container {
+/* .cw-container {
     width: 90%;
     margin: 0 auto;
-}
+} */
 
 /* |Header| */
 .cw-container header {
@@ -157,6 +163,7 @@ body {
 /* |ABOUT| */
 
 .cw-container .cw-about {
+    height: 100%;
     display: flex;
     justify-content: center;
 }
@@ -176,4 +183,118 @@ body {
     font-weight: 400;
 }
 
+
+
 /* |Projects| */
+
+.cw-container .cw-projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.cw-projects .cw-projects-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1rem 5rem;
+}
+
+.cw-projects .cw-projects-list .cw-project-item {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.cw-projects .cw-projects-list .cw-project-item .cw-project-item-image {
+    height: 350px;
+    width: 550px;
+    background: url("/img/wheelspinSS.png") center center/cover no-repeat;
+    border-radius: 0.5rem;
+}
+
+.cw-projects .cw-projects-list .cw-project-item .cw-project-item-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.cw-projects .cw-projects-list .cw-project-item .cw-project-item-details .detail-view {
+    height: 14rem;
+    width: 40rem;
+    background-color: var(--white-color);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-top-right-radius: 0.7rem;
+    border-bottom-right-radius: 0.7rem;
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    letter-spacing: 0.007em;
+}
+
+/* inside detail view */
+.detail-view .project-built-with ul {
+    margin-top: 1rem;
+}
+
+.detail-view .project-built-with ul li {
+    display: inline-block;
+    padding: 0.7rem;
+    background-color: var(--background-color);
+    color: var(--text-color-black);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.cw-projects .cw-projects-list .cw-project-item .cw-project-item-details .code-demo-links a {
+    display: inline-block;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    transition: color 0.1s ease-in-out;
+}
+
+.cw-projects .cw-projects-list .cw-project-item .cw-project-item-details .code-demo-links a:hover {
+    color: var(--secondary-color);
+}
+
+/* |CONTACT| */
+
+.cw-container .cw-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cw-container .cw-contact .cw-contact-detail {
+    width: 30vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.cw-container .cw-contact .cw-contact-detail p {
+    margin: 2rem 0;
+    font-size: 1.3rem;
+    letter-spacing: 0.008rem;
+}
+
+.cw-container .cw-contact .cw-contact-detail .cw-contact-email a{
+    background: #E0F0EB;
+    border: 2px solid var(--primary-color);
+    text-align: center;
+    display: inline-block;
+    padding: 0.5rem 3rem;
+    color:var(--primary-color);
+    transition: all .2s ease-in-out;
+}
+
+.cw-container .cw-contact .cw-contact-detail .cw-contact-email a:hover{
+    background-color: var(--primary-color);
+    color:var(--white-color);
+}
