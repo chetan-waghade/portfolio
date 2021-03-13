@@ -1,0 +1,179 @@
+/* Normalize */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Color Variables */
+:root {
+    --primary-color: #21A179;
+    --secondary-color: #EB5E28;
+    --background-color: #F2F7F2;
+    --text-color-black: #1E1E24;
+    --text-color-grey: #495464;
+    --white-color: #FFFFFF;
+}
+
+/* Remove default styling */
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* |Utilities| */
+.title div {
+    color: var(--primary-color);
+    padding-bottom: 1rem;
+    border-bottom: 4px solid rgba(30, 30, 36, 0.15);
+    margin: 2rem 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.title div span {
+    color: var(--secondary-color);
+}
+
+/* Styling */
+body {
+    background-color: var(--background-color);
+    font-family: Inconsolata, monospace;
+}
+
+/* Container */
+.cw-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* |Header| */
+.cw-container header {
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cw-container header .cw-logo a {
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.cw-container header .cw-logo a span {
+    color: var(--primary-color);
+}
+
+.cw-container header .cw-navbar {}
+
+.cw-container header .cw-navbar ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cw-container header .cw-navbar ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cw-container header .cw-navbar ul li {
+    margin: 0 0.5rem;
+}
+
+.cw-container header .cw-navbar ul li a {
+    display: block;
+    padding: 1rem 0.5rem;
+    color: var(--text-color-grey);
+    font-size: 1rem;
+    transition: color 0.2s ease-in-out;
+}
+
+.cw-container header .cw-navbar ul li a:hover {
+    color: var(--primary-color);
+}
+
+
+/* |Hero| */
+
+.cw-container section {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cw-container section .cw-hero-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cw-container section .cw-hero-info h6:first-child {
+    font-size: 1rem;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.cw-container section .cw-hero-info h1 {
+    font-size: 3rem;
+    color: var(--text-color-black);
+}
+
+.cw-container section .cw-hero-info h6 {
+    font-size: 1rem;
+    color: var(--text-color-grey);
+    font-weight: 400;
+}
+
+.cw-container section .cw-hero-info .cw-cto-button {
+    margin-top: 2rem;
+}
+
+.cw-container section .cw-hero-info .cw-cto-button .cw-btn-green {
+    height: 3rem;
+    width: 10rem;
+    background-color: var(--primary-color);
+    border: none;
+    color: var(--white-color);
+    letter-spacing: 2px;
+    text-align: center;
+    font-family: Inconsolata, monospace;
+    font-size: 1rem;
+    transition: background 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.cw-container section .cw-hero-info .cw-cto-button .cw-btn-green:hover {
+    box-shadow: 1px 1px 6px 1px rgba(133, 133, 133, 0.4);
+}
+
+/* |ABOUT| */
+
+.cw-container .cw-about {
+    display: flex;
+    justify-content: center;
+}
+
+.cw-container .cw-about .cw-about-section {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1rem;
+}
+
+.cw-container .cw-about .cw-about-section .cw-about-details p {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+/* |Projects| */
