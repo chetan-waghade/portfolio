@@ -1,0 +1,126 @@
+/* |Header| */
+
+.cw-container header {
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.cw-container header .cw-navbar {}
+
+.cw-container header .cw-navbar ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* |Hero| */
+
+.cw-container .cw-hero-section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.cw-container .cw-hero-section .cw-hero-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+}
+
+
+/* |ABOUT| */
+
+.cw-container .cw-about {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.cw-container .cw-about .cw-about-section {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+}
+
+
+/* |Skills| */
+
+.cw-container .cw-skills{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+}
+
+.cw-container .cw-skills .cw-skills-list {
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+.cw-container .cw-skills .cw-skills-list .cw-skills-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2rem;
+}
+
+
+/* |Projects| */
+
+.cw-container .cw-projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cw-projects .cw-projects-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.cw-projects .cw-projects-list .cw-project-item {
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+
+.cw-projects .cw-projects-list .cw-project-item .cw-project-item-details {
+    margin-top: 2rem;
+    
+}
+
+/* |CONTACT| */
+
+.cw-contact {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.cw-contact .cw-contact-detail {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

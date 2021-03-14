@@ -48,22 +48,24 @@ li {
 body {
     background-color: var(--background-color);
     font-family: Inconsolata, monospace;
-    scroll-behavior: smooth;
+    overflow-y: scroll;
 }
 
 /* Container */
-/* .cw-container {
-    width: 90%;
+.cw-container {
+    width: 90vw;
     margin: 0 auto;
-} */
+}
 
 /* |Header| */
+
+
 .cw-container header {
     height: 4rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    
 }
+
+
 
 .cw-container header .cw-logo a {
     color: var(--secondary-color);
@@ -77,15 +79,7 @@ body {
 
 .cw-container header .cw-navbar {}
 
-.cw-container header .cw-navbar ul {
-    display: flex;
-    justify-content: space-around;
-}
 
-.cw-container header .cw-navbar ul {
-    display: flex;
-    justify-content: space-around;
-}
 
 .cw-container header .cw-navbar ul li {
     margin: 0 0.5rem;
@@ -106,20 +100,6 @@ body {
 
 /* |Hero| */
 
-.cw-container section {
-    height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.cw-container section .cw-hero-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
-}
 
 .cw-container section .cw-hero-info h6:first-child {
     font-size: 1rem;
@@ -143,6 +123,7 @@ body {
 }
 
 .cw-container section .cw-hero-info .cw-cto-button .cw-btn-green {
+    display: inline-block;
     height: 3rem;
     width: 10rem;
     background-color: var(--primary-color);
@@ -150,6 +131,7 @@ body {
     color: var(--white-color);
     letter-spacing: 2px;
     text-align: center;
+    line-height: 3rem;
     font-family: Inconsolata, monospace;
     font-size: 1rem;
     transition: background 0.3s ease-in-out;
@@ -162,19 +144,7 @@ body {
 
 /* |ABOUT| */
 
-.cw-container .cw-about {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-}
 
-.cw-container .cw-about .cw-about-section {
-    width: 50vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 1rem;
-}
 
 .cw-container .cw-about .cw-about-section .cw-about-details p {
     text-align: center;
@@ -182,28 +152,24 @@ body {
     font-size: 1.1rem;
     font-weight: 400;
 }
+/* |Skills| */
+
+.cw-container .cw-skills{
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
 
 
+
+.cw-container .cw-skills .cw-skills-list .cw-skills-item span{
+    font-size: 3rem;
+}
 
 /* |Projects| */
 
-.cw-container .cw-projects {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
 
-.cw-projects .cw-projects-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 1rem 5rem;
-}
-
-.cw-projects .cw-projects-list .cw-project-item {
-    display: flex;
-    justify-content: flex-start;
-}
 
 .cw-projects .cw-projects-list .cw-project-item .cw-project-item-image {
     height: 350px;
@@ -212,25 +178,28 @@ body {
     border-radius: 0.5rem;
 }
 
-.cw-projects .cw-projects-list .cw-project-item .cw-project-item-details {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
 
-}
 
 .cw-projects .cw-projects-list .cw-project-item .cw-project-item-details .detail-view {
     height: 14rem;
     width: 40rem;
     background-color: var(--white-color);
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-    border-top-right-radius: 0.7rem;
-    border-bottom-right-radius: 0.7rem;
     padding-left: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     letter-spacing: 0.007em;
+}
+
+.border-right-top-bottom-radius{
+    border-top-right-radius: 0.7rem;
+    border-bottom-right-radius: 0.7rem;
+}
+
+.border-left-top-bottom-radius{
+    border-top-left-radius: 0.7rem;
+    border-bottom-left-radius: 0.7rem;
 }
 
 /* inside detail view */
@@ -262,29 +231,13 @@ body {
 
 /* |CONTACT| */
 
-.cw-container .cw-contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.cw-container .cw-contact .cw-contact-detail {
-    width: 30vw;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-}
-
-.cw-container .cw-contact .cw-contact-detail p {
+.cw-contact .cw-contact-detail p {
     margin: 2rem 0;
     font-size: 1.3rem;
     letter-spacing: 0.008rem;
 }
 
-.cw-container .cw-contact .cw-contact-detail .cw-contact-email a{
+ .cw-contact .cw-contact-detail .cw-contact-email a{
     background: #E0F0EB;
     border: 2px solid var(--primary-color);
     text-align: center;
@@ -292,9 +245,11 @@ body {
     padding: 0.5rem 3rem;
     color:var(--primary-color);
     transition: all .2s ease-in-out;
+    font-size: 1.1rem;
+    font-weight: 500;
 }
 
-.cw-container .cw-contact .cw-contact-detail .cw-contact-email a:hover{
+.cw-contact .cw-contact-detail .cw-contact-email a:hover{
     background-color: var(--primary-color);
     color:var(--white-color);
 }
