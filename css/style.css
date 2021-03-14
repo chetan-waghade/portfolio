@@ -172,10 +172,15 @@ body {
 
 
 .cw-projects .cw-projects-list .cw-project-item .cw-project-item-image {
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+
+.cw-projects .cw-projects-list .cw-project-item .cw-project-item-image img{
     height: 350px;
     width: 550px;
-    background: url("/img/wheelspinSS.png") center center/cover no-repeat;
-    border-radius: 0.5rem;
+    object-fit: cover;
 }
 
 
