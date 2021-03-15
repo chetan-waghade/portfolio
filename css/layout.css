@@ -2,6 +2,9 @@
 
 .cw-container header {
     height: 4rem;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
     justify-content: space-between;
     padding: 1rem 0;
@@ -11,6 +14,9 @@
 
 .cw-container header .cw-navbar ul {
     display: flex;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     justify-content: space-around;
 }
 
@@ -19,11 +25,17 @@
 .cw-container .cw-hero-section{
     height: 100vh;
     display: flex;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     justify-content: center;
 }
 
 .cw-container .cw-hero-section .cw-hero-info {
     display: flex;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -36,12 +48,18 @@
 .cw-container .cw-about {
     height: 100vh;
     display: flex;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     justify-content: center;
 }
 
 .cw-container .cw-about .cw-about-section {
     width: 50vw;
     display: flex;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -54,6 +72,9 @@
 .cw-container .cw-skills{
     height: 100vh;
     display: flex;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -62,12 +83,18 @@
 
 .cw-container .cw-skills .cw-skills-list {
     display: flex;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     justify-content: flex-start;
     gap: 2rem;
 }
 
 .cw-container .cw-skills .cw-skills-list .cw-skills-item {
     display: flex;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -79,6 +106,9 @@
 
 .cw-container .cw-projects {
     display: flex;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -87,6 +117,9 @@
 
 .cw-projects .cw-projects-list {
     display: flex;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -95,6 +128,9 @@
 
 .cw-projects .cw-projects-list .cw-project-item {
     display: flex;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     justify-content: flex-start;
 }
 
@@ -110,6 +146,9 @@
 .cw-contact {
     height: 100vh;
     display: flex;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -119,6 +158,9 @@
 .cw-contact .cw-contact-detail {
     width: 50vw;
     display: flex;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     flex-direction: column;
     justify-content: center;
     align-items: center;
