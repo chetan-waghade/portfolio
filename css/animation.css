@@ -12,7 +12,7 @@ header{
 }
 
 /* Hero Section */
-.cw-hero-section{
+.animate{
     opacity: 0;
     transform: translateY(-70px);
     animation: fadeIn 1.5s ease-in-out forwards;
@@ -27,26 +27,16 @@ header{
 }
 
 
+/* Socials */
 
-@keyframes slide {
-    from {
+.cw-social-links{
+    transform: translateY(10rem);
+    animation: raise 1.5s ease-in-out forwards; 
+}
 
-        transform: translateX(2px);
-    }
-
-    to {
-        transform: translateX(48px);
+@keyframes raise{
+    to{
+        transform: translateY(0);
     }
 }
 
-@keyframes slide-reverse {
-    from {
-
-        transform: translateX(48px);
-
-    }
-
-    to {
-        transform: translateX(2px);
-    }
-}

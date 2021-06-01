@@ -53,13 +53,11 @@ body {
 
 /* Container */
 .cw-container {
-    width: 90vw;
-    margin: 0 auto;
+    width: 90vw; 
+    margin: 0 auto; 
 }
 
 /* |Header| */
-
-
 .cw-container header {
     z-index: 2000;
     top:0;
@@ -67,6 +65,7 @@ body {
     width: inherit;
     overflow: hidden;
     background-color: var(--background-color);
+    
 }
 
 
@@ -264,4 +263,34 @@ body {
 .cw-contact .cw-contact-detail .cw-contact-email a:hover{
     background-color: var(--primary-color);
     color:var(--white-color);
+}
+
+/* Social links */
+
+
+.cw-social-links ul li:not(:last-child) {
+    text-align: center;
+    cursor: pointer;
+}
+
+.cw-social-links ul li:nth-child(2){
+    margin:0.5rem 0;
+}
+
+
+.cw-social-links ul li:not(:last-child) a{
+    display: block;
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+}
+
+
+.cw-social-links ul li:last-child{
+    background-color: var(--secondary-color);
+    height:3.5rem;
+    width: .2rem;
+    position: absolute;
+    bottom: 0;   
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
 }

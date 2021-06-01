@@ -53,6 +53,7 @@
     display: -moz-box;
     display: -ms-flexbox;
     justify-content: center;
+    
 }
 
 .cw-container .cw-about .cw-about-section {
@@ -167,3 +168,23 @@
     align-items: center;
     text-align: center;
 }
+
+/* Social links */
+
+.cw-social-links{
+    height: 8rem;
+    width: 3rem;
+    position: fixed;
+    bottom: 0;
+    left:2rem;
+    overflow: hidden;
+}
+
+.cw-social-links ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
